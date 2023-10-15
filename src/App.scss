@@ -1,0 +1,85 @@
+.App{
+    border: 1px solid #3d3d3d;
+    margin: 100px auto;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    border-radius: 10px;
+    background: #22282a;
+    color: #fff;
+    .title-todo{
+        font-size: 40px;
+        font-weight: bold;
+        border-bottom: 1px solid #ff274b;
+        margin-bottom: 10px;
+        color: #ff274b;
+    }
+    .to-do-container{
+        display: flex;
+        flex-direction: column;
+        .add-to-do-list{
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #171a1c;
+            margin-bottom: 15px;
+            li{
+                // width: 300px;
+                overflow-wrap: break-word;
+                list-style-type: "⏳";
+                cursor: pointer;
+                font-size: 30px;
+                transition: 0.5s;;
+                &.done{
+                    text-decoration: line-through;
+                    // color: #666;
+                }
+            }
+            span{
+                font-size: 35px;
+                // color: #f00;
+                cursor: pointer;
+                opacity: 0.7;
+                transition: 0.5s;
+                &:hover{
+                    opacity: 1;
+                    transform: translateY(-3px);
+                }
+            }
+        }
+        input{
+            padding: 10px;
+            outline: none;
+            border-radius: 10px;
+            border: none;
+            background: #1c1a1a;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        button{
+            padding: 5px;
+            font-size: 30px;
+            border: none;
+            background: transparent;
+            border: 1px solid #ff274b;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            // width: 70%;
+            text-align: center;
+            margin: 10px ;
+            &:hover{
+                transition: 0.5s;
+                background: #ff274b;
+            }
+        }
+    }
+    .message{
+        font-size: 30px;
+        // color: #000;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+}
